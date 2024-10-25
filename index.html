@@ -57,6 +57,7 @@
             </div>
         </div>
     </section>
+    <hr>
     <section id="about">
         <p class="section__text__p1">Get to know more</p>
         <h1 class="title">About Me</h1>
@@ -84,6 +85,7 @@
         </div>
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
+    <hr>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
@@ -173,6 +175,7 @@
         </div>
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#project'">
     </section>
+    <hr>
     <section id="project">
         <p class="section__text__p1">Browse my Recent</p>
         <h1 class="title">Projects</h1>
@@ -212,20 +215,32 @@
         </div>
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
+    <hr>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img class="email-icon" src="./assets/email.png" alt="Email Icon" class="icon contact-icon">
-                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin Icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com">Linkedin</a></p>
-            </div>
+        <div class="contact-section">
+            <form id="contactForm" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <small class="error" id="nameError"></small>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <small class="error" id="emailError"></small>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+            <small class="error" id="messageError"></small>
+        </div>
+        <button type="submit" class="btn btn-color-2 project-btn">Send Message</button>
+    </form>
         </div>
     </section>
+    <hr>
     <footer>
         <nav>
             <div class="nav-links-container">
