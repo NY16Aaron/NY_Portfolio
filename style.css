@@ -470,5 +470,7 @@ body.dark-mode .btn-color-2:hover {
 body.dark-mode #socials-container img {
     filter: brightness(0) invert(1); /* Invert colors for icons in dark mode */
 }
-
+body.dark-mode .arrow{
+    filter: brightness(0) invert(1);
+}
 
