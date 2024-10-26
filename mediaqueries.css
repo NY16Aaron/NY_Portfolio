@@ -15,6 +15,10 @@
     #hamburger-nav{
         display: flex;
     }
+    #project{
+        flex-direction: row; /* Arrange projects in a row */
+        justify-content: space-around;
+    }
     #experience, .experience-detailes-container{
         margin-top: 2rem;
     }
@@ -38,6 +42,18 @@
     .about-containers{
         margin-top: 0;
     }
+    #testimonials {
+        padding: 3rem 1.5rem;
+    }
+    .testimonial-container {
+        max-width: 600px;
+    }
+    .testimonial p {
+        font-size: 1.1rem;
+    }
+    .testimonial h4 {
+        font-size: 0.95rem;
+    }
     .contact-section {
         width: 80%;
         margin-left: auto;
@@ -50,6 +66,19 @@
         height: 83vh;
         margin-bottom: 0;
     }
+    #testimonials {
+        padding: 2rem 1rem;
+    }
+    .testimonial p {
+        font-size: 1rem;
+    }
+    .testimonial h4 {
+        font-size: 0.9rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+}
     article{
         font-size: 1rem;
     }

@@ -78,10 +78,29 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle.addEventListener("click", function () {
       body.classList.toggle("dark-mode");
       const isDarkMode = body.classList.contains("dark-mode");
-      const icon = isDarkMode ? "moon" : "sun";
+      const icon = isDarkMode ? "sun" : "moon";
       this.innerHTML = `<img src="./assets/${icon}.png" alt="${
         isDarkMode ? "Light" : "Dark"
       } Mode Icon" class="icon" />`; // Change icon
     });
   });
 });
+
+//Testimonial
+let currentTestimonialIndex = 0;
+
+function showNextTestimonial() {
+  const testimonials = document.querySelectorAll(".testimonial");
+
+  // Hide current testimonial
+  testimonials[currentTestimonialIndex].classList.remove("active");
+
+  // Calculate the next index
+  currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+
+  // Show the next testimonial
+  testimonials[currentTestimonialIndex].classList.add("active");
+}
+
+// Automatically switch testimonials every 5 seconds
+setInterval(showNextTestimonial, 5000);
