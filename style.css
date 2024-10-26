@@ -351,6 +351,21 @@ article .icon{
 .email-icon{
     height: 2.5rem;
 }
+.co-btn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #98a0a8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.co-btn:hover{
+    background: #333;
+}
 
 /* FOOTER SECTION */
 
@@ -363,10 +378,6 @@ footer p{
 }
 
 
-
-#contact{
-    position: relative;
-}
 .contact-section {
     justify-items: center;
     width: 500px;
@@ -410,3 +421,54 @@ footer p{
     margin-top: 5px;
     display: none;
 }
+
+/* General Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Default text color */
+}
+
+/* Links and Headings */
+body.dark-mode p,
+body.dark-mode a {
+    color: #ffffff; /* Light text color for paragraphs and headings */
+}
+
+/* Hamburger Menu Icon */
+body.dark-mode .hamburger-icon span {
+    background-color: white; /* Change the hamburger icon color to white */
+}
+body.dark-mode .menu-links li a{
+    color: black;
+}
+body.dark-mode .details-container p,
+ .details-container h3{
+    color: #121212;
+}
+
+/* Dark Mode Toggle Icon */
+body.dark-mode #dark-mode-toggle img,
+body.dark-mode #dark-mode-toggle-h img {
+    filter: brightness(0) invert(1); /* Invert colors for the dark mode toggle icon */
+}
+
+/* CV Download Button Text */
+body.dark-mode .btn-color-1,
+body.dark-mode .btn-color-2 {
+    color: white; /* Ensure button text is visible */
+    border-color: rgb(255, 255, 255); /* Light border for buttons */
+}
+
+/* Change button background on hover */
+body.dark-mode .btn-color-1:hover,
+body.dark-mode .btn-color-2:hover {
+    background: rgb(255, 255, 255); /* Light background on hover */
+    color: black; /* Dark text color on hover */
+}
+
+/* Social Media Icons */
+body.dark-mode #socials-container img {
+    filter: brightness(0) invert(1); /* Invert colors for icons in dark mode */
+}
+
+

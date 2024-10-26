@@ -38,12 +38,14 @@
     .about-containers{
         margin-top: 0;
     }
+    .contact-section {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 600px){
-    #contact, footer{
-        height: 40vh;
-    }
     #profile{
         height: 83vh;
         margin-bottom: 0;
@@ -88,5 +90,29 @@
     }
     .text-container{
         text-align: justify;
+    }
+    .contact-section {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1rem;
+        padding: 15px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .error {
+        font-size: 10px;
     }
 }

@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Explore the portfolio of Negasi Yenehun , a skilled front-end web developer proficient in HTML, CSS, JavaScript, and responsive design. Showcasing projects that highlight expertise in creating user-friendly, responsive, and visually appealing websites. Let's build something great together!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NY Portfolio</title>
+    <link rel="icon" href="./assets/checkmark.png" type="image/png">
+    <title>Negasi Yenehun - Front-End Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -16,6 +18,11 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#project">Project</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <span id="dark-mode-toggle" class="icon" aria-label="Toggle Dark Mode">
+                        <img src="./assets/moon.png" class="icon" alt="Dark" />
+                    </span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -32,7 +39,12 @@
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#project" onclick="toggleMenu()">Project</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+            </div>      
+        </div>
+        <div>
+            <span id="dark-mode-toggle-h" class="icon" aria-label="Toggle Dark Mode">
+                <img src="./assets/moon.png" class="icon" alt="Dark Mode Icon"/>
+            </span>
         </div>
     </nav>
     <section id="profile">
@@ -73,7 +85,7 @@
                         <p>1+ Years <br>Frontend Developer</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <img src="./assets/education.png" alt="Education Icon" id="experience-img" class="icon">
                         <h3>Education</h3>
                         <p>BSc in Information Technology <br>From Haramaya University</p>
                     </div>
@@ -81,6 +93,7 @@
                 <div class="text-container">
                     <p>I'm a dedicated front-end web developer with a strong foundation in HTML, CSS, and JavaScript. I enjoy creating visually appealing and responsive websites that provide seamless user experiences. I’m always learning and eager to bring innovative ideas to life through code and design.</p>
                 </div>
+                <br>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
@@ -236,7 +249,7 @@
             <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
             <small class="error" id="messageError"></small>
         </div>
-        <button type="submit" class="btn btn-color-2 project-btn">Send Message</button>
+        <button type="submit" class="co-btn">Send Message</button>
     </form>
         </div>
     </section>

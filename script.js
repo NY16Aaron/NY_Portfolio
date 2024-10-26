@@ -51,8 +51,9 @@ function validateForm() {
     messageError.textContent = "Message cannot be empty";
     messageError.style.display = "block";
     isValid = false;
-  } else if (message.length < 10) {
-    messageError.textContent = "Message must be at least 10 characters long";
+  } else if (message.length < 10 || message.length > 200) {
+    messageError.textContent =
+      "Message must be at least 10 and at most 200 characters long";
     messageError.style.display = "block";
     isValid = false;
   }
@@ -65,3 +66,22 @@ function validateForm() {
   // Return whether the form is valid
   return isValid;
 }
+
+// Dark Mode Functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const darkModeToggles = document.querySelectorAll(
+    "#dark-mode-toggle, #dark-mode-toggle-h"
+  );
+  const body = document.body;
+
+  darkModeToggles.forEach((toggle) => {
+    toggle.addEventListener("click", function () {
+      body.classList.toggle("dark-mode");
+      const isDarkMode = body.classList.contains("dark-mode");
+      const icon = isDarkMode ? "moon" : "sun";
+      this.innerHTML = `<img src="./assets/${icon}.png" alt="${
+        isDarkMode ? "Light" : "Dark"
+      } Mode Icon" class="icon" />`; // Change icon
+    });
+  });
+});
