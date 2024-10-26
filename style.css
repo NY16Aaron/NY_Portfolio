@@ -320,8 +320,8 @@ article .icon{
 
 /* TESTIMONIAL SECTION */
 #testimonials {
+    position: relative;
     margin-top: 1rem;
-    height: 70%;
     margin-bottom: 1rem;
     padding: 4rem 2rem;
     background-color: #f4f4f9;
@@ -338,6 +338,8 @@ article .icon{
 .testimonial {
     display: none;
     padding: 2rem;
+    height: 200px;
+    padding-top: 5rem;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: opacity 0.5s ease-in-out;
@@ -349,7 +351,7 @@ article .icon{
     opacity: 1;
 }
 
-.title {
+.testimonial-title {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1rem;
@@ -357,10 +359,12 @@ article .icon{
 
 .testimonial p {
     font-size: 1.2rem;
-    color: #555;
+    color: #888;
     margin-bottom: 1rem;
 }
-
+body.dark-mode .testimonial p{
+    color: black;
+}
 .testimonial h4 {
     font-size: 1rem;
     color: #888;
